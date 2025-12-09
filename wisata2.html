@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinasi Wisata Jepang Lainnya</title>
+  <link rel="stylesheet" href="css/wisata.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Explore Japan</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+        <li><a href="wisata.html" class="active">Wisata</a></li>
+      <li><a href="budaya.html">Budaya</a></li>
+      <li><a href="kuliner.html">Kuliner</a></li>
+      <li><a href="teknologi.html">Teknologi</a></li>
+      <li><a href="kontak.html">Penilaian</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="gambar/1019(2).mp4" type="video/mp4">
+      Browser kamu tidak mendukung pemutaran video.
+    </video>
+    <div class="content">
+      <h1>Destinasi Wisata Jepang Lainnya</h1>
+      <p>Temukan pesona tersembunyi Jepang — dari desa tradisional hingga alam yang memukau.</p>
+    </div>
+  </div>
+
+  <!-- Daftar Wisata -->
+  <section class="section">
+    <h2>20 Destinasi Menarik di Jepang</h2>
+    <p>Jelajahi tempat-tempat unik di Jepang yang tak kalah indah dari destinasi terkenal lainnya.</p>
+
+    <div class="card-container">
+
+      <div class="card">
+        <img src="gambar/kanazawa.webp" alt="Kanazawa">
+        <h3>Kanazawa</h3>
+        <p>Kota bersejarah dengan taman Kenrokuen yang megah dan distrik samurai yang masih lestari.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/takayama.jpg" alt="Takayama">
+        <h3>Takayama</h3>
+        <p>Kota tradisional di pegunungan Gifu yang terkenal dengan festival musim semi dan rumah kayu tua.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/shirakawa.jpg" alt="Shirakawa-go">
+        <h3>Shirakawa-go</h3>
+        <p>Desa UNESCO dengan rumah beratap jerami gaya Gassho-zukuri yang indah terutama saat bersalju.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/hakone.webp" alt="Hakone">
+        <h3>Hakone</h3>
+        <p>Kawasan wisata populer dengan onsen dan pemandangan Gunung Fuji yang memukau dari Danau Ashi.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/matsumoto.webp" alt="Matsumoto">
+        <h3>Matsumoto</h3>
+        <p>Dikenal dengan kastil hitam legendaris “Matsumoto Castle” dan udara pegunungan yang sejuk.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/beppu.jpg" alt="Beppu">
+        <h3>Beppu</h3>
+        <p>Kota onsen terbesar di Jepang, terkenal dengan “Jigoku Meguri” — tur ke delapan sumber air panas berwarna-warni.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/yokohama.jpg" alt="Yokohama">
+        <h3>Yokohama</h3>
+        <p>Kota pelabuhan dengan Chinatown terbesar di Jepang dan pemandangan malam spektakuler di Minato Mirai.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/kawagoe.jpg" alt="Kawagoe">
+        <h3>Kawagoe</h3>
+        <p>Dikenal sebagai “Little Edo” karena suasana klasik dan toko-toko tradisional dari zaman Edo.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/miyajima.jpg" alt="Miyajima">
+        <h3>Pulau Miyajima</h3>
+        <p>Pulau suci dengan gerbang torii terapung dan rusa liar yang hidup bebas di sekitar kuil Itsukushima.</p>
+      </div>
+
+      <div class="card">
+        <img src="gambar/akita.jpg" alt="Akita">
+        <h3>Akita</h3>
+        <p>Wilayah di utara Jepang yang terkenal dengan festival Kanto Matsuri dan sawah berpola indah.</p>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="wisata.html">1</a>
+      <a href="#" class="active">2</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="copyright">
+      &copy; 2025 Explore Japan | All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Script toggle menu -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      toggle.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

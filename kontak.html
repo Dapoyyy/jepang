@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penilaian Website - Explore Japan</title>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/kontak.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">Explore Japan</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="wisata.html">Wisata</a></li>
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="kuliner.html">Kuliner</a></li>
+        <li><a href="teknologi.html">Teknologi</a></li>
+        <li><a href="kontak.html" class="active">Penilaian</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO VIDEO -->
+    <div class="hero">
+      <video autoplay muted loop class="bg-video">
+        <source src="gambar/vd1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="kontak-container">
+        <h1>Beri Penilaian untuk Website Kami</h1>
+
+        <form id="contactForm">
+          <div class="field-group">
+            <input type="text" id="nama" placeholder=" " required />
+            <label>Nama Anda</label>
+          </div>
+
+          <div class="field-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label>Email Anda</label>
+          </div>
+
+          <div class="field-group">
+            <textarea id="pesan" placeholder=" " required></textarea>
+            <label>Masukkan Penilaian / Saran Anda...</label>
+          </div>
+
+          <button type="submit">Kirim Penilaian</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Popup Sukses -->
+    <div class="success-popup" id="popup">Penilaian berhasil dikirim!</div>
+
+    <!-- FOOTER -->
+    <footer>© 2025 Explore Japan. Semua Hak Dilindungi.</footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      const form = document.getElementById("contactForm");
+      const popup = document.getElementById("popup");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let nama = document.getElementById("nama").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let pesan = document.getElementById("pesan").value.trim();
+
+        if (nama === "" || email === "" || pesan === "") {
+          alert("Semua form harus diisi.");
+          return;
+        }
+
+        popup.classList.add("show");
+
+        setTimeout(() => {
+          popup.classList.remove("show");
+        }, 3000);
+
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
