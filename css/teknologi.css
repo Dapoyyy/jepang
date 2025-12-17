@@ -1,4 +1,6 @@
-/* === Reset === */
+/* ============================= */
+/* RESET & BASE                  */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
@@ -13,81 +15,119 @@ body {
   line-height: 1.6;
 }
 
-/* === Navbar === */
+/* ============================= */
+/* NAVBAR ATAS                   */
+/* ============================= */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  padding: 18px 60px;
+  background: rgba(5, 5, 5, 0.9);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #00b7ff;
+  color: #e60023;
 }
 
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ============================= */
+/* SIDEBAR OFF CANVAS            */
+/* ============================= */
 .nav-links {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #050505;
+  padding: 40px 30px;
   display: flex;
-  gap: 25px;
+  flex-direction: column;
+  gap: 22px;
+  transition: 0.35s ease;
+  z-index: 1100;
+}
+
+.nav-links.show {
+  left: 0;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.sidebar-title span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e60023;
+  margin-bottom: 25px;
+  display: block;
 }
 
 .nav-links a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .nav-links a:hover,
-.nav-links .active {
-  color: #00b7ff;
+.nav-links a.active {
+  color: #e60023;
 }
 
-/* === Hero Section === */
-.hero {
-  position: relative;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ============================= */
+/* OVERLAY                       */
+/* ============================= */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1050;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ============================= */
+/* PAGE HEADER                   */
+/* ============================= */
+.page-header {
+  max-width: 900px;
+  margin: 90px auto 50px;
+  padding: 0 20px;
   text-align: center;
-  padding: 20px;
 }
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(55%);
-  z-index: -1;
+.page-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
 }
 
-.hero .content {
-  max-width: 700px;
-  text-shadow: 0px 3px 10px rgba(0,0,0,0.7);
+.page-header p {
+  color: #aaa;
+  font-size: 1.05rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #00b7ff;
-}
-
-.hero p {
-  margin-top: 15px;
-  font-size: 1.2rem;
-}
-
-/* === Section Global === */
+/* ============================= */
+/* SECTION GLOBAL                */
+/* ============================= */
 .section {
   padding: 80px 60px;
   text-align: center;
@@ -105,7 +145,9 @@ body {
   color: #cccccc;
 }
 
-/* === Card Grid === */
+/* ============================= */
+/* CARD GRID (TEKNOLOGI)         */
+/* ============================= */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -117,12 +159,12 @@ body {
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0px 8px 25px rgba(0,0,0,0.7);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
 }
 
 .card img {
@@ -141,41 +183,49 @@ body {
   color: #ccc;
 }
 
-/* === Feature Section === */
+/* ============================= */
+/* FEATURE / INOVASI UNGGULAN    */
+/* ============================= */
 .feature {
-  background: #00111f;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background: linear-gradient(180deg, #00111f, #000);
+  padding: 100px 60px;
 }
 
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .feature-item {
   background: #0d0d0d;
-  padding: 25px;
-  border-radius: 12px;
-  transition: 0.3s;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 14px;
+  transition: 0.35s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
 .feature-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.8);
 }
 
 .feature-item h3 {
   color: #00b7ff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
 }
 
 .feature-item p {
   color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
-/* === Footer === */
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
 footer {
   background: #000e1a;
   padding: 25px;
@@ -184,17 +234,128 @@ footer {
   margin-top: 60px;
 }
 
-/* === Responsive === */
+/* ============================= */
+/* RESPONSIVE                    */
+/* ============================= */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 25px;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
   .section {
     padding: 60px 25px;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}
+/* ============================= */
+/* DETAIL TEKNOLOGI PAGE        */
+/* ============================= */
+
+.detail-hero {
+  width: 100%;
+  height: 55vh;
+  min-height: 380px;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+/* ============================= */
+/* CONTENT WRAPPER               */
+/* ============================= */
+
+.detail-content {
+  max-width: 900px;
+  margin: -80px auto 80px;
+  padding: 40px 30px;
+  background: #111;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Intro */
+.detail-content .intro {
+  font-size: 1.05rem;
+  color: #ddd;
+  margin-bottom: 35px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* ============================= */
+/* SECTION STYLE                 */
+/* ============================= */
+
+.detail-content section {
+  margin-bottom: 40px;
+}
+
+.detail-content h2 {
+  font-size: 1.5rem;
+  color: #00b7ff;
+  margin-bottom: 12px;
+}
+
+.detail-content p {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* ============================= */
+/* QUOTE                         */
+/* ============================= */
+
+.detail-quote {
+  margin-top: 50px;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #00111f, #000);
+  border-left: 5px solid #00b7ff;
+  color: #eee;
+  font-style: italic;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* ============================= */
+/* BACK LINK                     */
+/* ============================= */
+
+.back-link {
+  color: #00b7ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* RESPONSIVE                    */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .detail-hero {
+    height: 45vh;
+  }
+
+  .detail-content {
+    margin-top: -60px;
+    padding: 30px 20px;
+  }
+
+  .detail-content h2 {
+    font-size: 1.3rem;
   }
 }
