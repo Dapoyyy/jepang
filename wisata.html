@@ -8,135 +8,180 @@
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Explore Japan</div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="wisata.html" class="active">Wisata</a></li>
-      <li><a href="budaya.html">Budaya</a></li>
-      <li><a href="kuliner.html">Kuliner</a></li>
-      <li><a href="teknologi.html">Teknologi</a></li>
-      <li><a href="kontak.html">Penilaian</a></li>
-    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <video autoplay muted loop class="bg-video">
-      <source src="gambar/vd1.mp4" type="video/mp4">
-      Browser kamu tidak mendukung pemutaran video.
-    </video>
-    <div class="content">
-      <h1>Destinasi Wisata Jepang</h1>
-      <p>Temukan keindahan setiap sudut Negeri Sakura — dari kota modern hingga alam yang menakjubkan.</p>
-    </div>
-  </div>
+  <!-- SIDEBAR -->
+  <ul class="nav-links" id="nav-links">
+    <li class="sidebar-title"><span>Explore Japan</span></li>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="wisata.html" class="active">Wisata</a></li>
+    <li><a href="budaya.html">Budaya</a></li>
+    <li><a href="kuliner.html">Kuliner</a></li>
+    <li><a href="teknologi.html">Teknologi</a></li>
+    <li><a href="kontak.html">Penilaian</a></li>
+  </ul>
 
-  <!-- Daftar Wisata -->
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Destinasi Wisata Jepang</h1>
+    <p>
+      Jelajahi berbagai destinasi wisata populer di Jepang,
+      mulai dari kota modern hingga kawasan budaya dan alam.
+    </p>
+  </header>
+
+  <!-- DAFTAR WISATA -->
   <section class="section">
-    <h2>20 Destinasi Populer di Jepang</h2>
-    <p>Jelajahi berbagai tempat wisata yang menjadi ikon budaya dan keindahan Jepang.</p>
+    <h2>20 Destinasi Populer</h2>
+    <p>Klik salah satu destinasi untuk melihat informasi lengkap.</p>
 
     <div class="card-container">
 
-      <div class="card">
-        <img src="gambar/tokyo1.jpg" alt="Tokyo">
-        <h3>Tokyo</h3>
-        <p>Kota metropolitan futuristik dengan budaya unik dan kehidupan malam yang semarak.</p>
-      </div>
+      <!-- TOKYO -->
+      <a href="detail-tokyo.html" class="card-link">
+        <div class="card">
+          <img src="gambar/tokyo1.jpg" alt="Tokyo">
+          <h3>Tokyo</h3>
+          <p>Kota metropolitan futuristik dengan budaya modern.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/kuil.webp" alt="Kyoto">
-        <h3>Kyoto</h3>
-        <p>Kota bersejarah dengan ratusan kuil dan taman tradisional yang menenangkan.</p>
-      </div>
+      <!-- KYOTO -->
+      <a href="detail-kyoto.html" class="card-link">
+        <div class="card">
+          <img src="gambar/kuil.webp" alt="Kyoto">
+          <h3>Kyoto</h3>
+          <p>Kota bersejarah dengan kuil dan taman tradisional.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/osaka.jpg" alt="Osaka">
-        <h3>Osaka</h3>
-        <p>Kota kuliner dan hiburan dengan landmark seperti Osaka Castle dan Dotonbori.</p>
-      </div>
+      <!-- OSAKA -->
+      <a href="detail-osaka.html" class="card-link">
+        <div class="card">
+          <img src="gambar/osaka.jpg" alt="Osaka">
+          <h3>Osaka</h3>
+          <p>Kota kuliner dan hiburan dengan suasana hidup.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/fuji.jpg" alt="Gunung Fuji">
-        <h3>Gunung Fuji</h3>
-        <p>Ikon Jepang yang megah, tempat favorit pendaki dan fotografer dari seluruh dunia.</p>
-      </div>
+      <!-- FUJI -->
+      <a href="detail-fuji.html" class="card-link">
+        <div class="card">
+          <img src="gambar/fuji.jpg" alt="Gunung Fuji">
+          <h3>Gunung Fuji</h3>
+          <p>Ikon Jepang dan destinasi alam populer.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/hokaido.webp" alt="Hokkaido">
-        <h3>Hokkaido</h3>
-        <p>Pulau indah dengan salju lebat di musim dingin dan festival Sapporo Snow Festival.</p>
-      </div>
+      <!-- HOKKAIDO -->
+      <a href="detail-hokkaido.html" class="card-link">
+        <div class="card">
+          <img src="gambar/hokaido.webp" alt="Hokkaido">
+          <h3>Hokkaido</h3>
+          <p>Pulau bersalju dengan festival musim dingin.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/nara.jpg" alt="Nara">
-        <h3>Nara</h3>
-        <p>Dikenal dengan rusa jinak dan kuil Todai-ji yang memiliki patung Buddha raksasa.</p>
-      </div>
+      <!-- NARA -->
+      <a href="detail-nara.html" class="card-link">
+        <div class="card">
+          <img src="gambar/nara.jpg" alt="Nara">
+          <h3>Nara</h3>
+          <p>Kota tenang dengan rusa jinak dan kuil Buddha.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/hiroshima.jpg" alt="Hiroshima">
-        <h3>Hiroshima</h3>
-        <p>Kota bersejarah yang kini menjadi simbol perdamaian dunia dengan Peace Memorial Park.</p>
-      </div>
+      <!-- HIROSHIMA -->
+      <a href="detail-hiroshima.html" class="card-link">
+        <div class="card">
+          <img src="gambar/hiroshima.jpg" alt="Hiroshima">
+          <h3>Hiroshima</h3>
+          <p>Simbol perdamaian dunia dan kota bersejarah.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/okinawa.jpg" alt="Okinawa">
-        <h3>Okinawa</h3>
-        <p>Pulau tropis dengan pantai biru jernih dan budaya Ryukyu yang unik.</p>
-      </div>
+      <!-- OKINAWA -->
+      <a href="detail-okinawa.html" class="card-link">
+        <div class="card">
+          <img src="gambar/okinawa.jpg" alt="Okinawa">
+          <h3>Okinawa</h3>
+          <p>Pulau tropis dengan budaya Ryukyu.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/kamakura.jpg" alt="Kamakura">
-        <h3>Kamakura</h3>
-        <p>Kota pesisir yang tenang dengan patung Buddha raksasa dan pantai indah.</p>
-      </div>
+      <!-- KAMAKURA -->
+      <a href="detail-kamakura.html" class="card-link">
+        <div class="card">
+          <img src="gambar/kamakura.jpg" alt="Kamakura">
+          <h3>Kamakura</h3>
+          <p>Kota pesisir dengan patung Buddha raksasa.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/fukuoka.jpg" alt="Fukuoka">
-        <h3>Fukuoka</h3>
-        <p>Kota pelabuhan modern di selatan Jepang, terkenal dengan ramen Hakata dan festivalnya.</p>
-      </div>
+      <!-- FUKUOKA -->
+      <a href="detail-fukuoka.html" class="card-link">
+        <div class="card">
+          <img src="gambar/fukuoka.jpg" alt="Fukuoka">
+          <h3>Fukuoka</h3>
+          <p>Kota modern dengan kuliner khas Hakata.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/nagoya.webp" alt="Nagoya">
-        <h3>Nagoya</h3>
-        <p>Pusat industri dan budaya yang memiliki Nagoya Castle dan Toyota Museum.</p>
-      </div>
+      <!-- NAGOYA -->
+      <a href="detail-nagoya.html" class="card-link">
+        <div class="card">
+          <img src="gambar/nagoya.webp" alt="Nagoya">
+          <h3>Nagoya</h3>
+          <p>Pusat industri dan budaya Jepang.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/nikko.webp" alt="Nikko">
-        <h3>Nikko</h3>
-        <p>Kota pegunungan dengan kuil megah dan alam yang indah, cocok untuk wisata spiritual.</p>
-      </div>
+      <!-- NIKKO -->
+      <a href="detail-nikko.html" class="card-link">
+        <div class="card">
+          <img src="gambar/nikko.webp" alt="Nikko">
+          <h3>Nikko</h3>
+          <p>Kota pegunungan dengan kuil megah.</p>
+        </div>
+      </a>
 
     </div>
 
-    <!-- Pagination -->
+    <!-- PAGINATION -->
     <div class="pagination">
       <a href="#" class="active">1</a>
       <a href="wisata2.html">2</a>
     </div>
-
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="copyright">
       &copy; 2025 Explore Japan | All Rights Reserved
     </div>
   </footer>
 
+  <!-- SCRIPT -->
   <script>
     const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.getElementById('nav-links');
+    const overlay = document.getElementById('overlay');
 
     toggle.addEventListener('click', () => {
       navLinks.classList.toggle('show');
-      toggle.classList.toggle('active');
+      overlay.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      overlay.classList.remove('show');
     });
   </script>
 
