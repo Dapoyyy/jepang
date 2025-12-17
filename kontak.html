@@ -20,18 +20,23 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="logo">Explore Japan</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="wisata.html">Wisata</a></li>
-        <li><a href="budaya.html">Budaya</a></li>
-        <li><a href="kuliner.html">Kuliner</a></li>
-        <li><a href="teknologi.html">Teknologi</a></li>
-        <li><a href="kontak.html" class="active">Penilaian</a></li>
-      </ul>
-    </nav>
+ <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Explore Japan</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- SIDEBAR -->
+  <ul class="nav-links" id="nav-links">
+    <li class="sidebar-title"><span>Explore Japan</span></li>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="wisata.html">Wisata</a></li>
+    <li><a href="budaya.html">Budaya</a></li>
+    <li><a href="kuliner.html">Kuliner</a></li>
+    <li><a href="teknologi.html">Teknologi</a></li>
+    <li><a href="kontak.html" class="active">Penilaian</a></li>
+  </ul>
+
 
     <!-- HERO VIDEO -->
     <div class="hero">
@@ -94,6 +99,22 @@
 
         form.reset();
       });
+
+        <!-- SCRIPT -->
+
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const overlay = document.getElementById('overlay');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      overlay.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      overlay.classList.remove('show');
+    });
     </script>
   </body>
 </html>
