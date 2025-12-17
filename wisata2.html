@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Destinasi Wisata Jepang Lainnya</title>
-  <link rel="stylesheet" href="css/wisata.css">
+  <link rel="stylesheet" href="css/wisata.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Explore Japan</div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-        <li><a href="wisata.html" class="active">Wisata</a></li>
-      <li><a href="budaya.html">Budaya</a></li>
-      <li><a href="kuliner.html">Kuliner</a></li>
-      <li><a href="teknologi.html">Teknologi</a></li>
-      <li><a href="kontak.html">Penilaian</a></li>
-    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <video autoplay muted loop class="bg-video">
-      <source src="gambar/1019(2).mp4" type="video/mp4">
-      Browser kamu tidak mendukung pemutaran video.
-    </video>
-    <div class="content">
-      <h1>Destinasi Wisata Jepang Lainnya</h1>
-      <p>Temukan pesona tersembunyi Jepang — dari desa tradisional hingga alam yang memukau.</p>
-    </div>
-  </div>
+  <!-- SIDEBAR -->
+  <ul class="nav-links" id="nav-links">
+    <li class="sidebar-title"><span>Explore Japan</span></li>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="wisata.html"  class="active">Wisata</a></li>
+    <li><a href="budaya.html">Budaya</a></li>
+    <li><a href="kuliner.html">Kuliner</a></li>
+    <li><a href="teknologi.html">Teknologi</a></li>
+    <li><a href="kontak.html">Penilaian</a></li>
+  </ul>
 
-  <!-- Daftar Wisata -->
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <h1>Destinasi Wisata Jepang Lainnya</h1>
+    <p>
+      Jelajahi destinasi wisata Jepang yang kaya akan sejarah, alam,
+      dan budaya tradisional yang masih terjaga.
+    </p>
+  </header>
+
+  <!-- KONTEN -->
   <section class="section">
-    <h2>20 Destinasi Menarik di Jepang</h2>
-    <p>Jelajahi tempat-tempat unik di Jepang yang tak kalah indah dari destinasi terkenal lainnya.</p>
+    <h2>Destinasi Pilihan</h2>
+    <p>Klik destinasi untuk melihat informasi lengkap.</p>
 
     <div class="card-container">
 
-      <div class="card">
-        <img src="gambar/kanazawa.webp" alt="Kanazawa">
-        <h3>Kanazawa</h3>
-        <p>Kota bersejarah dengan taman Kenrokuen yang megah dan distrik samurai yang masih lestari.</p>
-      </div>
+      <a href="detail-kanazawa.html" class="card-link">
+        <div class="card">
+          <img src="gambar/kanazawa.webp" alt="Kanazawa">
+          <h3>Kanazawa</h3>
+          <p>Kota bersejarah dengan taman Kenrokuen dan distrik samurai.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/takayama.jpg" alt="Takayama">
-        <h3>Takayama</h3>
-        <p>Kota tradisional di pegunungan Gifu yang terkenal dengan festival musim semi dan rumah kayu tua.</p>
-      </div>
+      <a href="detail-takayama.html" class="card-link">
+        <div class="card">
+          <img src="gambar/takayama.jpg" alt="Takayama">
+          <h3>Takayama</h3>
+          <p>Kota tradisional pegunungan dengan festival budaya.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/shirakawa.jpg" alt="Shirakawa-go">
-        <h3>Shirakawa-go</h3>
-        <p>Desa UNESCO dengan rumah beratap jerami gaya Gassho-zukuri yang indah terutama saat bersalju.</p>
-      </div>
+      <a href="detail-shirakawa-go.html" class="card-link">
+        <div class="card">
+          <img src="gambar/shirakawa.jpg" alt="Shirakawa-go">
+          <h3>Shirakawa-go</h3>
+          <p>Desa UNESCO dengan rumah beratap jerami khas.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/hakone.webp" alt="Hakone">
-        <h3>Hakone</h3>
-        <p>Kawasan wisata populer dengan onsen dan pemandangan Gunung Fuji yang memukau dari Danau Ashi.</p>
-      </div>
+      <a href="detail-hakone.html" class="card-link">
+        <div class="card">
+          <img src="gambar/hakone.webp" alt="Hakone">
+          <h3>Hakone</h3>
+          <p>Resor onsen dengan panorama Gunung Fuji.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/matsumoto.webp" alt="Matsumoto">
-        <h3>Matsumoto</h3>
-        <p>Dikenal dengan kastil hitam legendaris “Matsumoto Castle” dan udara pegunungan yang sejuk.</p>
-      </div>
+      <a href="detail-matsumoto.html" class="card-link">
+        <div class="card">
+          <img src="gambar/matsumoto.webp" alt="Matsumoto">
+          <h3>Matsumoto</h3>
+          <p>Kastil hitam ikonik dengan udara pegunungan.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/beppu.jpg" alt="Beppu">
-        <h3>Beppu</h3>
-        <p>Kota onsen terbesar di Jepang, terkenal dengan “Jigoku Meguri” — tur ke delapan sumber air panas berwarna-warni.</p>
-      </div>
+      <a href="detail-beppu.html" class="card-link">
+        <div class="card">
+          <img src="gambar/beppu.jpg" alt="Beppu">
+          <h3>Beppu</h3>
+          <p>Kota onsen dengan sumber air panas unik.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/yokohama.jpg" alt="Yokohama">
-        <h3>Yokohama</h3>
-        <p>Kota pelabuhan dengan Chinatown terbesar di Jepang dan pemandangan malam spektakuler di Minato Mirai.</p>
-      </div>
+      <a href="detail-yokohama.html" class="card-link">
+        <div class="card">
+          <img src="gambar/yokohama.jpg" alt="Yokohama">
+          <h3>Yokohama</h3>
+          <p>Kota pelabuhan modern dengan pemandangan malam.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/kawagoe.jpg" alt="Kawagoe">
-        <h3>Kawagoe</h3>
-        <p>Dikenal sebagai “Little Edo” karena suasana klasik dan toko-toko tradisional dari zaman Edo.</p>
-      </div>
+      <a href="detail-kawagoe.html" class="card-link">
+        <div class="card">
+          <img src="gambar/kawagoe.jpg" alt="Kawagoe">
+          <h3>Kawagoe</h3>
+          <p>Kota “Little Edo” bernuansa klasik.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/miyajima.jpg" alt="Miyajima">
-        <h3>Pulau Miyajima</h3>
-        <p>Pulau suci dengan gerbang torii terapung dan rusa liar yang hidup bebas di sekitar kuil Itsukushima.</p>
-      </div>
+      <a href="detail-pulau-miyajima.html" class="card-link">
+        <div class="card">
+          <img src="gambar/miyajima.jpg" alt="Pulau Miyajima">
+          <h3>Pulau Miyajima</h3>
+          <p>Pulau suci dengan gerbang torii terapung.</p>
+        </div>
+      </a>
 
-      <div class="card">
-        <img src="gambar/akita.jpg" alt="Akita">
-        <h3>Akita</h3>
-        <p>Wilayah di utara Jepang yang terkenal dengan festival Kanto Matsuri dan sawah berpola indah.</p>
-      </div>
+      <a href="detail-akita.html" class="card-link">
+        <div class="card">
+          <img src="gambar/akita.jpg" alt="Akita">
+          <h3>Akita</h3>
+          <p>Wilayah pedesaan dengan festival tradisional.</p>
+        </div>
+      </a>
 
     </div>
 
-    <!-- Pagination -->
+    <!-- PAGINATION -->
     <div class="pagination">
       <a href="wisata.html">1</a>
       <a href="#" class="active">2</a>
     </div>
-
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="copyright">
       &copy; 2025 Explore Japan | All Rights Reserved
     </div>
   </footer>
 
-  <!-- Script toggle menu -->
+  <!-- SCRIPT -->
   <script>
     const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.getElementById('nav-links');
+    const overlay = document.getElementById('overlay');
 
     toggle.addEventListener('click', () => {
       navLinks.classList.toggle('show');
-      toggle.classList.toggle('active');
+      overlay.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      overlay.classList.remove('show');
     });
   </script>
 
