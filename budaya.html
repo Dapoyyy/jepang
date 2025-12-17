@@ -7,192 +7,205 @@
   <link rel="stylesheet" href="css/budaya.css">
 </head>
 <body>
-  <!-- Navbar -->
+
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Explore Japan</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="wisata.html">Wisata</a></li>
-      <li><a href="budaya.html" class="active">Budaya</a></li>
-      <li><a href="kuliner.html">Kuliner</a></li>
-      <li><a href="teknologi.html">Teknologi</a></li>
-      <li><a href="kontak.html">Penilaian</a></li>
-    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
   </nav>
 
+  <!-- SIDEBAR -->
+  <ul class="nav-links" id="nav-links">
+    <li class="sidebar-title"><span>Explore Japan</span></li>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="wisata.html"">Wisata</a></li>
+    <li><a href="budaya.html" class="active">Budaya</a></li>
+    <li><a href="kuliner.html">Kuliner</a></li>
+    <li><a href="teknologi.html">Teknologi</a></li>
+    <li><a href="kontak.html">Penilaian</a></li>
+  </ul>
 
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+    <!-- PAGE HEADER -->
+  <header class="page-header">
+     <h1>Keindahan Budaya Jepang</h1>
+    <p>Jelajahi tradisi, seni, dan warisan abadi yang membentuk jati diri Negeri Sakura 🇯🇵</p>
+  </header>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <video autoplay muted loop class="bg-video">
-      <source src="gambar/vd1.mp4" type="video/mp4">
-      Browser kamu tidak mendukung pemutaran video.
-    </video>
-    <div class="content">
-      <h1>Keindahan Budaya Jepang</h1>
-      <p>Jelajahi tradisi, seni, dan warisan abadi yang membentuk jati diri Negeri Sakura 🇯🇵</p>
-    </div>
-  </div>
-  <!-- Tanggal dan Waktu -->
+  <!-- Tanggal & Waktu -->
   <div class="datetime">
     <p class="date-display"></p>
     <p class="time-display"></p>
   </div>
-  <!-- Daftar 12 Budaya Jepang -->
-  <section class="tradisi">
-    <div class="image-left">
-      <img src="gambar/matsuri.jpeg" alt="Festival Jepang">
-    </div>
-    <div class="text-right">
-      <h2>1. Festival Jepang (Matsuri)</h2>
-      <p>Setiap kota di Jepang memiliki festival unik yang penuh warna dan musik. Gion Matsuri di Kyoto dan Nebuta Matsuri di Aomori adalah dua di antaranya yang paling terkenal.</p>
-    </div>
-  </section>
 
-  <section class="tradisi reverse">
-    <div class="image-left">
-      <img src="gambar/kimono.jpg" alt="Kimono Jepang">
-    </div>
-    <div class="text-right">
-      <h2>2. Kimono dan Yukata</h2>
-      <p>Pakaian tradisional Jepang ini melambangkan keanggunan dan identitas budaya. Kimono sering dipakai pada upacara resmi, sedangkan Yukata dipakai di musim panas dan festival.</p>
-    </div>
-  </section>
+  <!-- ===== LIST BUDAYA (BISA DIKLIK) ===== -->
 
-  <section class="tradisi">
-    <div class="image-left">
-      <img src="gambar/teh.webp" alt="Upacara Teh Jepang">
-    </div>
-    <div class="text-right">
-      <h2>3. Upacara Minum Teh (Chanoyu)</h2>
-      <p>Seni minum teh Jepang mengajarkan kesederhanaan dan kedamaian. Setiap gerakan dilakukan dengan makna mendalam dan penuh ketenangan.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-matsuri.html" class="tradisi-link">
+    <section class="tradisi">
+      <div class="image-left">
+        <img src="gambar/matsuri.jpeg" alt="Festival Jepang">
+      </div>
+      <div class="text-right">
+        <h2>1. Festival Jepang (Matsuri)</h2>
+        <p>Setiap kota di Jepang memiliki festival unik yang penuh warna dan musik.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi reverse">
-    <div class="image-left">
-      <img src="gambar/ikebana.jpg" alt="Ikebana Jepang">
-    </div>
-    <div class="text-right">
-      <h2>4. Ikebana (Seni Merangkai Bunga)</h2>
-      <p>Lebih dari sekadar dekorasi, Ikebana adalah bentuk meditasi yang menyeimbangkan keindahan alam dan jiwa manusia melalui seni merangkai bunga.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-kimono.html" class="tradisi-link">
+    <section class="tradisi reverse">
+      <div class="image-left">
+        <img src="gambar/kimono.jpg" alt="Kimono Jepang">
+      </div>
+      <div class="text-right">
+        <h2>2. Kimono dan Yukata</h2>
+        <p>Pakaian tradisional Jepang yang melambangkan keanggunan.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi">
-    <div class="image-left">
-      <img src="gambar/origami.jpg" alt="Origami Jepang">
-    </div>
-    <div class="text-right">
-      <h2>5. Origami (Seni Melipat Kertas)</h2>
-      <p>Origami melatih ketelitian dan kreativitas. Dari kertas biasa, seniman Jepang mampu menciptakan karya yang indah dan sarat filosofi kesabaran.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-tea.html" class="tradisi-link">
+    <section class="tradisi">
+      <div class="image-left">
+        <img src="gambar/teh.webp" alt="Upacara Teh Jepang">
+      </div>
+      <div class="text-right">
+        <h2>3. Upacara Minum Teh (Chanoyu)</h2>
+        <p>Seni minum teh yang mengajarkan ketenangan dan kesederhanaan.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi reverse">
-    <div class="image-left">
-      <img src="gambar/taiko.jpg" alt="Taiko Drum Jepang">
-    </div>
-    <div class="text-right">
-      <h2>6. Musik Tradisional Jepang (Taiko)</h2>
-      <p>Taiko adalah drum besar yang digunakan dalam ritual dan festival. Irama kuatnya melambangkan semangat dan kekuatan jiwa Jepang.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-ikebana.html" class="tradisi-link">
+    <section class="tradisi reverse">
+      <div class="image-left">
+        <img src="gambar/ikebana.jpg" alt="Ikebana Jepang">
+      </div>
+      <div class="text-right">
+        <h2>4. Ikebana</h2>
+        <p>Seni merangkai bunga yang menyeimbangkan alam dan jiwa.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi">
-    <div class="image-left">
-      <img src="gambar/kabuki.jpg" alt="Kabuki Theater Jepang">
-    </div>
-    <div class="text-right">
-      <h2>7. Kabuki (Teater Tradisional)</h2>
-      <p>Kabuki adalah teater klasik Jepang dengan kostum mencolok dan riasan dramatis. Ceritanya sering menggambarkan kisah cinta, perang, dan moralitas.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-origami.html" class="tradisi-link">
+    <section class="tradisi">
+      <div class="image-left">
+        <img src="gambar/origami.jpg" alt="Origami Jepang">
+      </div>
+      <div class="text-right">
+        <h2>5. Origami</h2>
+        <p>Seni melipat kertas dengan filosofi kesabaran.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi reverse">
-    <div class="image-left">
-      <img src="gambar/bonsai.webp" alt="Bonsai Jepang">
-    </div>
-    <div class="text-right">
-      <h2>8. Bonsai</h2>
-      <p>Bonsai adalah seni menanam pohon miniatur yang melambangkan keharmonisan antara manusia dan alam. Prosesnya bisa memakan waktu puluhan tahun.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-taiko.html" class="tradisi-link">
+    <section class="tradisi reverse">
+      <div class="image-left">
+        <img src="gambar/taiko.jpg" alt="Taiko Jepang">
+      </div>
+      <div class="text-right">
+        <h2>6. Musik Tradisional (Taiko)</h2>
+        <p>Irama kuat yang melambangkan semangat Jepang.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi">
-    <div class="image-left">
-      <img src="gambar/noren.jpg" alt="Noren Jepang">
-    </div>
-    <div class="text-right">
-      <h2>9. Noren dan Arsitektur Tradisional</h2>
-      <p>Noren adalah tirai kain yang tergantung di pintu toko atau rumah tradisional Jepang. Ia menjadi simbol keramahan dan identitas usaha.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-kabuki.html" class="tradisi-link">
+    <section class="tradisi">
+      <div class="image-left">
+        <img src="gambar/kabuki.jpg" alt="Kabuki Jepang">
+      </div>
+      <div class="text-right">
+        <h2>7. Kabuki</h2>
+        <p>Teater tradisional dengan riasan dan cerita dramatis.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi reverse">
-    <div class="image-left">
-      <img src="gambar/shodo.png" alt="Shodo Kaligrafi Jepang">
-    </div>
-    <div class="text-right">
-      <h2>10. Shodo (Seni Kaligrafi)</h2>
-      <p>Kaligrafi Jepang menggabungkan tulisan dan seni. Setiap sapuan kuas mencerminkan ekspresi emosi dan kepribadian penulisnya.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-bonsai.html" class="tradisi-link">
+    <section class="tradisi reverse">
+      <div class="image-left">
+        <img src="gambar/bonsai.webp" alt="Bonsai Jepang">
+      </div>
+      <div class="text-right">
+        <h2>8. Bonsai</h2>
+        <p>Seni pohon mini yang mencerminkan keharmonisan alam.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi">
-    <div class="image-left">
-      <img src="gambar/sumo.jpg" alt="Sumo Jepang">
-    </div>
-    <div class="text-right">
-      <h2>11. Sumo (Olahraga Tradisional)</h2>
-      <p>Sumo bukan sekadar olahraga, tetapi ritual spiritual yang diiringi doa dan penghormatan kepada para dewa Shinto sebelum pertarungan dimulai.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-shodo.html" class="tradisi-link">
+    <section class="tradisi">
+      <div class="image-left">
+        <img src="gambar/shodo.png" alt="Shodo Jepang">
+      </div>
+      <div class="text-right">
+        <h2>9. Shodo</h2>
+        <p>Seni kaligrafi Jepang dengan makna filosofis.</p>
+      </div>
+    </section>
+  </a>
 
-  <section class="tradisi reverse">
-    <div class="image-left">
-      <img src="gambar/anime.jpg" alt="Anime dan Manga Jepang">
-    </div>
-    <div class="text-right">
-      <h2>12. Anime dan Manga</h2>
-      <p>Budaya populer Jepang yang kini mendunia. Anime dan manga menggambarkan berbagai kisah dan filosofi kehidupan dalam bentuk visual yang memukau.</p>
-    </div>
-  </section>
+  <a href="detail-budaya-sumo.html" class="tradisi-link">
+    <section class="tradisi reverse">
+      <div class="image-left">
+        <img src="gambar/sumo.jpg" alt="Sumo Jepang">
+      </div>
+      <div class="text-right">
+        <h2>10. Sumo</h2>
+        <p>Olahraga tradisional dengan ritual spiritual.</p>
+      </div>
+    </section>
+  </a>
+
+  <a href="detail-budaya-anime.html" class="tradisi-link">
+    <section class="tradisi">
+      <div class="image-left">
+        <img src="gambar/anime.jpg" alt="Anime Jepang">
+      </div>
+      <div class="text-right">
+        <h2>11. Anime dan Manga</h2>
+        <p>Budaya populer Jepang yang mendunia.</p>
+      </div>
+    </section>
+  </a>
 
   <!-- Footer -->
   <footer>
     <p class="copyright">© 2025 Japan Explorer | Semua Hak Dilindungi</p>
   </footer>
 
+  <!-- Script waktu -->
   <script>
     function updateDateTime() {
-      const dateDisplay = document.querySelector('.date-display');
-      const timeDisplay = document.querySelector('.time-display');
-
-      const now = new Date();
-      const date = now.toLocaleDateString('id-ID', {
-          weekday: 'long',
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric',
-      });
-      const time = now.toLocaleTimeString('id-ID', {
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-      });
-
-      if (dateDisplay) {
-          dateDisplay.textContent = date;
-      }
-      if (timeDisplay) {
-          timeDisplay.textContent = time;
-      }
+      document.querySelector('.date-display').textContent =
+        new Date().toLocaleDateString('id-ID', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+      document.querySelector('.time-display').textContent =
+        new Date().toLocaleTimeString('id-ID');
     }
-
-    // Update waktu setiap detik
     setInterval(updateDateTime, 1000);
     updateDateTime();
+
+      <!-- SCRIPT -->
+
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const overlay = document.getElementById('overlay');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      overlay.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      overlay.classList.remove('show');
+    });
   </script>
+
 </body>
 </html>
